@@ -24,48 +24,50 @@ The first purpose of the capstone project is to give a chance to revise all the 
 
 # Project report Template
 
-## Title: [your title goes here]
+## Title: CarAstra Agent Network
 
 ## Overview
-
-[your overview goes here. My project does this that  etc]
-
+Overview: "AutoMate" is a voice-activated Agentic AI designed to revolutionize automotive consulting. Unlike static chatbots, it utilizes autonomous web tools to search the live internet for real-time global vehicle data, prices, and trends. The system features a unique "Personality Engine" that blends expert advice with humor and wit to drive high user engagement. Additionally, it implements Persistent Long-Term Memory, allowing the AI to remember user preferences and past conversations across sessions, creating a truly personalized, human-like, and addictive user experience.
 ## Reason for picking up this project
 
 Expain how this project is aligned with this course content.
+Prompting: I use advanced system prompts to define the "Global Concierge" persona, enforcing strict behavioral constraints (like "never guess prices") while injecting a witty, addictive personality into the AI.
 
+Structured Output: All internal data flows through strict Pydantic models (JSON schema) to ensure that complex search parameters and conversation states are passed cleanly between nodes without errors.
+
+Semantic Search: I utilize vector embeddings to process natural language queries, allowing the system to understand the intent behind vague requests (e.g., "safe car for new parents") rather than relying on exact keyword matching.
+
+RAG (Retrieval Augmented Generation): Unlike static bots, I implemented a Web-RAG system where the model autonomously retrieves real-time data from the live internet and feeds it to the LLM to ensure up-to-the-minute accuracy.
+
+Tool Calling & MCP: The model autonomously decides when to trigger the web_search tool to fetch facts or the TTS engine to speak, effectively giving the AI "hands" to execute Python code.
+
+LangGraph (State, Nodes, Graph): The entire application is built on a StateGraph with specific nodes for reasoning and execution, managing the cyclic flow of conversation and maintaining long-term memory across sessions.
+
+Here is the concise, 3-4 line version:
+
+chose this project to go beyond static chatbots and build a humorous, active Voice-AI that actually "thinks" and searches the live web. My main goal was to prove that LangGraph is the future of voice assistants. I wanted to demonstrate that graph-based agents handle complex reasoning and memory much better than old linear models. Although this is just a prototype, it successfully provided a strong foundation for what intelligent, voice-controlled systems can become in the future
 ## Plan
 
 I plan to excecute these steps to complete my project.
 
-- [TODO] Step 1 involves blah blah
-- [TODO] Step 2 involves blah blah
-- [TODO] Step 3 involves blah blah
-- ...
-- [TODO] Step n involves blah blah
+## 🗺️ Implementation Roadmap
+
+### Phase 1: Environment & Infrastructure Setup
+- [done] Step 1 involves initializing the project repository and defining the modular folder structure (`agents/`, `rag/`, `graph/`).
+- [done] Step 2 involves configuring the Python virtual environment and installing core AI dependencies (`LangGraph`, `LangChain`, `OpenAI`).
+- [done] Step 3 involves setting up secure environment variable management (`.env`) for API keys and configuration settings.
+
+### Phase 2: Data Modeling & Schema Design
+- [done] Step 4 involves designing Pydantic models to strictly define the `ConversationState` and `Message` history.
+- [done] Step 5 involves creating structured output schemas for `InventorySearchRequest` to ensure type-safe tool execution.
+- [done] Step 6 involves implementing the `CustomerProfile` schema to track user preferences and budget across the session.
+
+### Phase 3: The "Brain" (LangGraph Architecture)
+- [TODO] Step 7 involves designing the **StateGraph** architecture, defining the flow between the Reasoning Node and the Tool Node.
+- [TODO] Step 8 involves implementing the **Concierge Node**, which serves as the central reasoning engine for the agent.
+- [TODO] Step 9 involves building the **Cyclic Router Logic** that allows the agent to loop between thinking, searching, and speaking.
+
+more steps ill bee added as i go on and solve it....
+
 
 ## Conclusion:
-
-I had planned to achieve {this this}. I think I have/have-not achieved the conclusion satisfactorily. The reason for your satisfaction/unsatisfaction.
-
-----------
-
-# Added instructions:
-
-- This is a `solo assignment`. Each of you will work alone. You are free to talk, discuss with chatgpt, but you are responsible for what you submit. Some students may be called for viva. You should be able to each and every line of work submitted by you.
-
-- `commit` History maintenance.
-  - Fork this respository and build on top of that.
-  - For every step in your plan, there has to be a commit.
-  - Change [TODO] to [DONE] in the plan, before you commit after that step. 
-  - The commit history should show decent amount of work spread into minimum two dates. 
-  - **All the commits done in one day will be rejected**. Even if you are capable of doing the whole thing in one day, refine it in two days.  
- 
- - Deadline: Nov 30, Sunday 11:59 pm
-
-
-# Grading: total 25 marks
-
-- Coverage of most of topics in this class: 20
-- Creativity: 5
-  
