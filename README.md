@@ -77,13 +77,19 @@ I plan to excecute these steps to complete my project.
 - [done] Step 14 involves injecting the **"Personality Engine"** to add humor, wit, and a casual tone to the AI's responses.
 
 ### Phase 6: Voice Interface Integration
-- [TODO] Step 15 involves implementing the **Speech-to-Text (STT)** pipeline using Google Speech Recognition for accurate listening.
+- [done] Step 15 involves implementing the **Speech-to-Text (STT)** pipeline using Google Speech Recognition for accurate listening.
 - [TODO] Step 16 involves implementing the **Text-to-Speech (TTS)** pipeline using `pyttsx3` for natural voice output.
 - [TODO] Step 17 involves synchronizing the Voice I/O loop with the LangGraph processing speed to minimize latency.
-  
+
+  ### Phase 7: Visualization & Deployment (LangSmith)
+- [TODO] Step 18 involves creating the `langgraph.json` configuration file to define the graph entry point and dependencies.
+- [TODO] Step 19 involves setting up **LangSmith Tracing** to log all agent steps, tool calls, and errors for debugging.
+- [TODO] Step 20 involves launching the **LangGraph Studio** using the `langgraph dev` command to visualize the agent's graph and interact with it in a GUI.
+- [TODO] Step 21 involves conducting final edge-case testing and finalizing the project documentation.
 
 
-more steps ill bee added as i go on and solve it....
+
+more steps will bee added as i go on and solve it....
 
 
 ## Conclusion:
