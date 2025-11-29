@@ -63,9 +63,20 @@ I plan to excecute these steps to complete my project.
 - [done] Step 6 involves implementing the `CustomerProfile` schema to track user preferences and budget across the session.
 
 ### Phase 3: The "Brain" (LangGraph Architecture)
-- [TODO] Step 7 involves designing the **StateGraph** architecture, defining the flow between the Reasoning Node and the Tool Node.
-- [TODO] Step 8 involves implementing the **Concierge Node**, which serves as the central reasoning engine for the agent.
-- [TODO] Step 9 involves building the **Cyclic Router Logic** that allows the agent to loop between thinking, searching, and speaking.
+- [done] Step 7 involves designing the **StateGraph** architecture, defining the flow between the Reasoning Node and the Tool Node.
+- [done] Step 8 involves implementing the **Concierge Node**, which serves as the central reasoning engine for the agent.
+- [done] Step 9 involves building the **Cyclic Router Logic** that allows the agent to loop between thinking, searching, and speaking.
+- 
+  ### Phase 4: Intelligence & Tooling (RAG)
+- [TODO] Step 10 involves implementing the **Semantic Search Engine** using vector embeddings to understand user intent (e.g., "safe family car").
+- [TODO] Step 11 involves integrating the **Web Search Tool** (`duckduckgo-search`) to enable real-time fetching of global car prices and specs.
+- [TODO] Step 12 involves binding the Python tools to the LLM, giving the agent the autonomous ability to "pause and search" the internet.
+
+### Phase 5: Persona & Prompt Engineering
+- [TODO] Step 13 involves engineering the `GLOBAL_EXPERT_PROMPT` to enforce constraints (e.g., "Never guess prices").
+- [TODO] Step 14 involves injecting the **"Personality Engine"** to add humor, wit, and a casual tone to the AI's responses.
+
+
 
 more steps ill bee added as i go on and solve it....
 
