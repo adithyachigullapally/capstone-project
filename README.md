@@ -68,14 +68,19 @@ I plan to excecute these steps to complete my project.
 - [done] Step 9 involves building the **Cyclic Router Logic** that allows the agent to loop between thinking, searching, and speaking.
 - 
   ### Phase 4: Intelligence & Tooling (RAG)
-- [TODO] Step 10 involves implementing the **Semantic Search Engine** using vector embeddings to understand user intent (e.g., "safe family car").
-- [TODO] Step 11 involves integrating the **Web Search Tool** (`duckduckgo-search`) to enable real-time fetching of global car prices and specs.
-- [TODO] Step 12 involves binding the Python tools to the LLM, giving the agent the autonomous ability to "pause and search" the internet.
+- [done] Step 10 involves implementing the **Semantic Search Engine** using vector embeddings to understand user intent (e.g., "safe family car").
+- [done] Step 11 involves integrating the **Web Search Tool** (`duckduckgo-search`) to enable real-time fetching of global car prices and specs.
+- [done] Step 12 involves binding the Python tools to the LLM, giving the agent the autonomous ability to "pause and search" the internet.
 
 ### Phase 5: Persona & Prompt Engineering
-- [TODO] Step 13 involves engineering the `GLOBAL_EXPERT_PROMPT` to enforce constraints (e.g., "Never guess prices").
-- [TODO] Step 14 involves injecting the **"Personality Engine"** to add humor, wit, and a casual tone to the AI's responses.
+- [done] Step 13 involves engineering the `GLOBAL_EXPERT_PROMPT` to enforce constraints (e.g., "Never guess prices").
+- [Todo] Step 14 involves injecting the **"Personality Engine"** to add humor, wit, and a casual tone to the AI's responses.
 
+### Phase 6: Voice Interface Integration
+- [TODO] Step 15 involves implementing the **Speech-to-Text (STT)** pipeline using Google Speech Recognition for accurate listening.
+- [TODO] Step 16 involves implementing the **Text-to-Speech (TTS)** pipeline using `pyttsx3` for natural voice output.
+- [TODO] Step 17 involves synchronizing the Voice I/O loop with the LangGraph processing speed to minimize latency.
+  
 
 
 more steps ill bee added as i go on and solve it....
